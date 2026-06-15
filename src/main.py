@@ -13,7 +13,7 @@ import matplotlib
 
 from sklearn.feature_selection import SelectKBest, SelectFromModel, RFE, SequentialFeatureSelector
 from sklearn.feature_selection import r_regression, f_regression
-from CFSmethod import CFS
+from cfs import CFS
 
 
 def feature_selection_kbest(x_trainf, y_train, nf):
@@ -257,10 +257,10 @@ def main_ml(parameters_path, results_path):
 
 
 if __name__ == '__main__':
-    parameters_path1 = './parameters1.json'
-    parameters_path2 = './parameters2.json'
-    parameters_path3 = './parameters3.json'
-    parameters_path4 = './parameters4.json'
+    parameters_path1 = '../configs/parameters1.json'
+    parameters_path2 = '../configs/parameters2.json'
+    parameters_path3 = '../configs/parameters3.json'
+    parameters_path4 = '../configs/parameters4.json'
     output_path = '../results'
     
     main_ml(parameters_path1, output_path)

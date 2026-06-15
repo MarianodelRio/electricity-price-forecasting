@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Virtual environments
+tfg/
+tfg_ml/
+
+# Binary experiment outputs (large, not useful on GitHub)
+*.npy
+
 # C extensions
 *.so
 
